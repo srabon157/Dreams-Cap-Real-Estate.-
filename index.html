@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dreams Cap Real-Estate — স্বপ্নের ঠিকানাকে বাস্তবে রূপ দেয়</title>
+  <meta name="description" content="Dreams Cap Real-Estate — বিশ্বাস, গুণমান ও প্রতিশ্রুতি। আধুনিক নকশা, মানসম্মত নির্মাণ এবং নিরাপদ বিনিয়োগ।">
+  <link rel="icon" href="./img/ChatGPT_Image_Oct_22__2025__02_17_14_PM-removebg-preview.png" type="image/png">
+
+  <!-- Google Font (fallback safe) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg-1: #f6fbff;
+      --accent: #00c3ff;
+      --accent-600: #00a7cc;
+      --muted: #6b7280;
+      --card: #ffffff;
+      --glass: rgba(255,255,255,0.6);
+      --radius: 14px;
+      --max-width: 1200px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, var(--bg-1), #eef7fb 60%);
+      color:#0f172a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      overflow-x:hidden;
+    }
+
+    .container{
+      max-width:var(--max-width);
+      margin:0 auto;
+      padding:0 20px;
+    }
+
+    /* ---------- NAVBAR ---------- */
+    header{
+      position:sticky;
+      top:0;
+      z-index:60;
+      backdrop-filter: blur(6px);
+      background: linear-gradient(180deg, rgba(26,26,26,0.92), rgba(26,26,26,0.85));
+      color:#fff;
+      box-shadow:0 6px 18px rgba(2,6,23,0.25);
+    }
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:14px 0;
+      max-width:var(--max-width);
+      margin:0 auto;
+    }
+    .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+    .logo{
+      width:44px;height:44px;border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#6bf0ff);
+      display:flex;align-items:center;justify-content:center;
+      box-shadow:0 4px 12px rgba(0,195,255,0.18);
+      font-weight:800;color:#022;
+    }
+    .brand h1{font-size:18px;margin:0;color:#fff;letter-spacing:0.4px}
+    nav ul{display:flex;gap:18px;align-items:center;list-style:none;margin:0;padding:0}
+    nav a{color:#e6f7ff;text-decoration:none;font-weight:500}
+    nav a:hover{color:var(--accent);transform:translateY(-2px)}
+    .cta-btn{
+      background:linear-gradient(90deg,var(--accent),var(--accent-600));
+      color:#012;
+      border:none;padding:10px 16px;border-radius:10px;font-weight:700;cursor:pointer;
+      box-shadow:0 8px 20px rgba(0,195,255,0.14), inset 0 -2px 0 rgba(0,0,0,0.06);
+    }
+    .menu-toggle{display:none;background:transparent;border:0;color:#fff;font-size:22px;cursor:pointer}
+
+    /* ---------- HERO ---------- */
+    .hero{
+      min-height:84vh;
+      display:flex;
+      align-items:center;
+      position:relative;
+      padding:40px 0 24px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1fr 460px;
+      gap:40px;
+      align-items:center;
+      width:100%;
+    }
+    .hero-left h2{
+      margin:0 0 14px 0;
+      font-size:38px;
+      line-height:1.02;
+      color: #022;
+      letter-spacing: -0.6px;
+    }
+    .tag{
+      display:inline-block;
+      background:linear-gradient(90deg,#eaffff,#dff9ff);
+      color:var(--accent-600);
+      padding:6px 10px;border-radius:999px;font-weight:700;margin-bottom:14px;
+      box-shadow:0 6px 18px rgba(0,195,255,0.06);
+    }
+    .hero-left p{color:var(--muted);font-size:16px;margin-bottom:20px}
+    .hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-600));color:#042;padding:12px 18px;border-radius:10px;border:0;font-weight:700;cursor:pointer;box-shadow:0 10px 28px rgba(0,195,255,0.12);}
+    .btn-outline{background:transparent;border:1px solid rgba(2,6,23,0.06);padding:11px 16px;border-radius:10px;color:var(--muted);cursor:pointer}
+    .hero-right{
+      background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.75));
+      border-radius:20px;padding:18px;box-shadow:0 18px 40px rgba(2,6,23,0.08);
+    }
+    .hero-card{
+      display:flex;gap:12px;align-items:center;
+    }
+    .hero-card img{width:70px;height:70px;object-fit:cover;border-radius:12px;flex-shrink:0}
+    .hero-card h3{margin:0;font-size:16px}
+    .hero-features{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+    .pill{background:#f0fcff;padding:8px 12px;border-radius:999px;color:#055;font-weight:600;font-size:13px;box-shadow:inset 0 -2px 0 rgba(0,0,0,0.03)}
+    /* subtle hero animation */
+    .float{
+      animation: floatY 6s ease-in-out infinite;
+    }
+    @keyframes floatY{0%{transform:translateY(0)}50%{transform:translateY(-8px)}100%{transform:translateY(0)}}
+
+    /* ---------- SECTIONS ---------- */
+    section{padding:44px 0}
+    .section-title{display:flex;align-items:baseline;gap:12px;margin-bottom:22px}
+    .section-title h2{margin:0;color:var(--accent-600);font-size:20px}
+    .section-title p{margin:0;color:var(--muted);font-size:14px}
+
+    /* projects grid */
+    .projects-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
+    }
+    .card{
+      background:var(--card);
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 12px 30px rgba(2,6,23,0.05);
+      transition:transform .35s cubic-bezier(.2,.9,.3,1), box-shadow .35s;
+      cursor:default;
+    }
+    .card:hover{transform:translateY(-8px);box-shadow:0 20px 50px rgba(2,6,23,0.09)}
+    .card img{width:100%;height:200px;object-fit:cover;display:block;transition:transform .6s}
+    .card:hover img{transform:scale(1.06)}
+    .card-body{padding:16px}
+    .badge{display:inline-block;background:linear-gradient(90deg,#fff,#f3fffe);padding:6px 10px;border-radius:8px;color:#056;font-weight:700;font-size:13px;margin-bottom:10px}
+
+    /* testimonials */
+    .testi{
+      background:linear-gradient(180deg,#fbffff,#f0fbff);
+      border-radius:14px;padding:18px;box-shadow:0 12px 30px rgba(2,6,23,0.04)
+    }
+    .testi p{color:var(--muted);margin:0 0 10px 0}
+    .testi .who{font-weight:700;color:#052;font-size:14px}
+
+    /* contact form inline */
+    .contact-grid{display:grid;grid-template-columns:1fr 420px;gap:26px;align-items:start}
+    .form-card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 12px 30px rgba(2,6,23,0.05)}
+    label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+    input,textarea{
+      width:100%;padding:12px;border-radius:10px;border:1px solid #e8eef2;margin-bottom:12px;font-size:14px;outline:none
+    }
+    input:focus,textarea:focus{box-shadow:0 6px 18px rgba(0,195,255,0.08);border-color:var(--accent)}
+    .small-note{font-size:13px;color:var(--muted)}
+
+    /* footer */
+    footer{padding:32px 0;background:linear-gradient(180deg,#061022,#0b1530);color:#e8f9ff}
+    .footer-inner{display:flex;gap:30px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .socials{display:flex;gap:12px;align-items:center}
+    .socials a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,0.06);color:#dff9ff;text-decoration:none}
+
+    /* responsive */
+    @media (max-width:1024px){
+      .hero-grid{grid-template-columns:1fr 380px}
+      .projects-grid{grid-template-columns:repeat(2,1fr)}
+      .contact-grid{grid-template-columns:1fr}
+    }
+    @media (max-width:720px){
+      nav ul{display:none}
+      .menu-toggle{display:inline-block}
+      .hero-grid{grid-template-columns:1fr}
+      .hero-right{order:-1;margin-bottom:18px}
+      .projects-grid{grid-template-columns:1fr}
+      .brand h1{font-size:16px}
+    }
+
+    /* ---------- small utilities ---------- */
+    .muted{color:var(--muted)}
+    .center{text-align:center}
+    .gap-12{gap:12px}
+    /* modal */
+    .modal-backdrop{position:fixed;inset:0;background:rgba(2,6,23,0.5);display:none;align-items:center;justify-content:center;z-index:120}
+    .modal{background:#fff;padding:20px;border-radius:12px;max-width:540px;width:92%;box-shadow:0 18px 56px rgba(2,6,23,0.2)}
+    .close-btn{background:transparent;border:0;font-size:18px;cursor:pointer;color:var(--muted)}
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header>
+    <div class="nav container" role="navigation" aria-label="main navigation">
+      <div class="brand">
+        <div><img src="./img/ChatGPT_Image_Oct_22__2025__02_17_14_PM-removebg-preview.png" height="76" width="70" alt=""></div>
+        <div>
+          <h1>Dreams Cap</h1>
+          <div style="font-size:12px;color:#cfeffd;margin-top:2px">Real-Estate</div>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div style="display:flex;gap:10px;align-items:center">
+        <button class="cta-btn" id="openModal">Free Consultation</button>
+        <button class="menu-toggle" id="menuBtn" aria-label="toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <div class="tag">বিশ্বাসযোগ্য ● নিরাপদ বিনিয়োগ</div>
+          <h2 class="float">স্বপ্নের ঠিকানাকে<br>বাস্তবে রূপ দেয়</h2>
+          <p>Dreams Cap Real-Estate — আমরা নির্মাণ করি মানসম্মত আবাসন, যাতে থাকে আরাম, নিরাপত্তা ও গর্ব। আপনার উপযোগী ফাইন্যান্সিং ও কাস্টম ডিজাইন সেবা।</p>
+          <div class="hero-ctas">
+            <button class="btn-primary" id="ctaContact">বিস্তারিত জানুন</button>
+            <button class="btn-outline" onclick="window.scrollTo({top:document.getElementById('projects').offsetTop-80, behavior:'smooth'})">আমাদের প্রজেক্ট দেখুন</button>
+          </div>
+
+          <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
+            <div class="pill">অফার: ০% ডাউন পেমেন্ট</div>
+            <div class="pill">৫% ওয়ার্কম্যানশিপ গ্যারান্টি</div>
+            <div class="pill">লোকেশন: সহজ কানেক্টিভিটি</div>
+          </div>
+        </div>
+
+        <aside class="hero-right">
+          <div style="display:flex;gap:12px;align-items:center">
+            <img src="./img/Blue Modern Construction Company Desktop Wallpaper.png" alt="property" style="width:86px;height:86px;border-radius:12px;object-fit:cover;flex-shrink:0">
+            <div>
+              <div style="font-size:13px;color:var(--muted)">Featured</div>
+              <h3 style="margin:6px 0 0 0">Green Valley Apartment</h3>
+              <div style="font-size:13px;color:var(--muted);margin-top:6px">2-4 BHK • Modern amenities • Secure Parking</div>
+            </div>
+          </div>
+
+          <div style="margin-top:16px" class="hero-features">
+            <div class="pill">24/7 Security</div>
+            <div class="pill">Onsite Maintenance</div>
+            <div class="pill">Flexible Payment</div>
+          </div>
+
+          <div style="margin-top:18px;display:flex;gap:10px">
+            <button class="btn-primary" onclick="document.getElementById('openModal').click()">Book Visit</button>
+            <button class="btn-outline" onclick="window.open('mailto:info@dreamscap.com')">Email Us</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="container">
+      <div class="section-title">
+        <h2>আমাদের সম্পর্কে</h2>
+        <p>— Dreams Cap Real-Estate</p>
+      </div>
+      <div style="display:flex;gap:24px;align-items:center;flex-wrap:wrap">
+        <div style="flex:1;min-width:260px">
+          <p class="muted">Dreams Cap Real-Estate একটি পেশাদার রিয়েল এস্টেট প্রতিষ্ঠান যা প্রতিশ্রুতির সাথে আধুনিক নকশা ও মানসম্মত নির্মাণ প্রদান করে। আমাদের প্রতিটি প্রকল্পে আমরা নিশ্চিত করি — নির্ভরযোগ্যতা, স্বচ্ছতা ও বিনিয়োগের সুমধুর ফলাফল।</p>
+
+          <ul style="margin-top:16px;list-style:none;padding:0;display:flex;flex-direction:column;gap:8px">
+            <li class="small-note">✔  অভিজ্ঞ টিম ও প্রকৌশলী</li>
+            <li class="small-note">✔  কাস্টম ডিজাইন ও নির্মাণ</li>
+            <li class="small-note">✔  গুণমান নিয়ন্ত্রণ ও সেবা</li>
+          </ul>
+        </div>
+
+        <div style="flex:1;min-width:260px">
+          <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px">
+            <div style="background:linear-gradient(180deg,#fff,#f6feff);padding:12px;border-radius:12px;box-shadow:0 8px 24px rgba(0,195,255,0.06)">
+              <div style="font-weight:800;color:#052;font-size:20px">120+</div>
+              <div class="muted" style="font-size:13px">সম্পন্ন প্রকল্প</div>
+            </div>
+            <div style="background:linear-gradient(180deg,#fff,#fff7f8);padding:12px;border-radius:12px;box-shadow:0 8px 24px rgba(255,77,120,0.03)">
+              <div style="font-weight:800;color:#052;font-size:20px">750+</div>
+              <div class="muted" style="font-size:13px">খুশি পরিবার</div>
+            </div>
+            <div style="background:linear-gradient(180deg,#f9fff9,#f0fff8);padding:12px;border-radius:12px;box-shadow:0 8px 24px rgba(0,200,120,0.03)">
+              <div style="font-weight:800;color:#052;font-size:20px">15 yrs</div>
+              <div class="muted" style="font-size:13px">অভিজ্ঞতা</div>
+            </div>
+            <div style="background:linear-gradient(180deg,#fff8ff,#fff2ff);padding:12px;border-radius:12px;box-shadow:0 8px 24px rgba(120,60,200,0.03)">
+              <div style="font-weight:800;color:#052;font-size:20px">24/7</div>
+              <div class="muted" style="font-size:13px">কাস্টমার সাপোর্ট</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container">
+      <div class="section-title">
+        <h2>আমাদের প্রজেক্টসমূহ</h2>
+        <p>সিলেক্টেড রেসিডেন্স, অ্যাপার্টমেন্ট এবং কমপার্টমেন্ট</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="card">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1400&q=60" alt="Green Valley">
+          <div class="card-body">
+            <div class="badge">Green Valley Apartment</div>
+            <h3 style="margin:8px 0 6px">2-4 BHK • Starting 45 Lac</h3>
+            <p class="muted" style="font-size:14px">Premium layout, landscaped garden, community hall and secure gated area.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=60" alt="Dream City">
+          <div class="card-body">
+            <div class="badge">Dream City Complex</div>
+            <h3 style="margin:8px 0 6px">Studio to 3BHK • Smart living</h3>
+            <p class="muted" style="font-size:14px">Central location, easy access to public transit and modern amenities.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1400&q=60" alt="Sunrise Tower">
+          <div class="card-body">
+            <div class="badge">Sunrise Tower</div>
+            <h3 style="margin:8px 0 6px">Luxury 3BHK • Rooftop pool</h3>
+            <p class="muted" style="font-size:14px">Skyline view, rooftop amenities and premium interior finishes.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="container">
+      <div class="section-title">
+        <h2>গ্রাহকের মতামত</h2>
+        <p>আমাদের সাথে কাজ করা মানুষের কিছু মন্তব্য</p>
+      </div>
+
+      <div id="testiWrap" style="display:flex;gap:16px;align-items:stretch;overflow:hidden">
+        <div class="testi" style="min-width:320px">
+          <p>"Dreams Cap-এর মাধ্যমে আমার স্বপ্নের বাড়ি পেয়ে খুব খুশি। কাজটা সময়মত ও দক্ষতার সঙ্গে হয়েছে।"</p>
+          <div class="who">— মাহমুদা খাতুন</div>
+        </div>
+        <div class="testi" style="min-width:320px">
+          <p>"প্রকল্পগুলোর মান ও পরে সার্ভিস অসাধারণ — রেজিস্ট্রেশন প্রক্রিয়া অনেকটাই সহজ হয়েছিল।"</p>
+          <div class="who">— হাসান আলী</div>
+        </div>
+        <div class="testi" style="min-width:320px">
+          <p>"লোকেশন ও কিস্তি সুবিধা দুটোই দারুণ। আমি পরিবারসহ এখন আরামেই বসবাস করছি।"</p>
+          <div class="who">— সুমি রহমান</div>
+        </div>
+      </div>
+    </section>
+
+
+   
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="container">
+      <div class="section-title">
+        <h2>যোগাযোগ করুন</h2>
+        <p>আপনি এখনই আমাদের সাথে কনসালটেশন বুক করতে পারেন</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="form-card">
+          <form id="contactForm" onsubmit="submitForm(event)">
+            <label for="name">নাম</label>
+            <input id="name" required placeholder="আপনার নাম" />
+
+            <label for="email">ইমেইল</label>
+            <input id="email" type="email" required placeholder="you@example.com" />
+
+            <label for="msg">বার্তা</label>
+            <textarea id="msg" rows="5" required placeholder="আপনার প্রয়োজন/প্রশ্ন লিখুন..."></textarea>
+
+            <button type="submit" class="btn-primary" style="width:100%;margin-top:6px">পাঠিয়ে দিন</button>
+            <div id="formMsg" class="small-note" style="margin-top:8px"></div>
+          </form>
+        </div>
+
+        <aside>
+          <div style="background:linear-gradient(180deg,#fff,#f7fffc);padding:16px;border-radius:12px;box-shadow:0 12px 30px rgba(0,195,255,0.05)">
+            <h3 style="margin:0 0 6px">অফিস ঠিকানা</h3>
+            <div class="muted" style="font-size:14px">Jashore It park , Jashore - 7400, Bangladesh</div>
+            <div style="margin-top:12px">
+              <div class="small-note">📞 +880 1747038633</div>
+              <div class="small-note">✉️ dreamscaprealestate@gmail.com</div>
+            </div>
+
+            <div style="margin-top:12px" class="muted small-note">অফিস টাইম: সোম - শনি, ১০:০০ AM - ৫:০০ PM</div>
+          </div>
+
+          <div style="margin-top:12px;padding:12px;border-radius:10px;background:#fff;box-shadow:0 8px 20px rgba(2,6,23,0.04)">
+            <h4 style="margin:0 0 8px">লোকেশন (প্রদর্শনী)</h4>
+            <!-- NOTE: Replace the src with your real Google Maps embed link -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7336.479433741008!2d89.20828114438594!3d23.161449441281416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sit%20park%20jessore!5e0!3m2!1sen!2sbd!4v1761120107521!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <div style="display:flex;gap:8px;align-items:center">
+        <div><img src="./img/ChatGPT_Image_Oct_22__2025__02_17_14_PM-removebg-preview.png" height="76" width="70" alt=""></div>
+          <div>
+            <div style="font-weight:700;color:#dff9ff">Dreams Cap Real-Estate</div>
+            <div style="font-size:13px;color:#cfeffd">স্বপ্নের ঠিকানাকে বাস্তবে রূপ দেয়</div>
+          </div>
+        </div>
+        <div class="muted" style="margin-top:12px;font-size:13px">© <span id="yr"></span> Dreams Cap. All rights reserved.</div>
+      </div>
+
+      <div style="display:flex;gap:12px;align-items:center">
+        <div class="socials">
+          <a href="https://www.facebook.com/DreamsCapRealEstate" aria-label="facebook">f</a>
+          <a href="#" aria-label="instagram">ig</a>
+          <a href="#" aria-label="linkedin">in</a>
+        </div>
+        <div style="font-size:13px;color:#cfeffd">Powered by Dreams Cap Team</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CONTACT MODAL -->
+  <div id="modalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal" role="document">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <h3 style="margin:0">Free Consultation</h3>
+        <button class="close-btn" id="closeModal" aria-label="Close">✕</button>
+      </div>
+      <p class="muted" style="margin-top:0;margin-bottom:12px">আপনার সুবিধামতো সময় বলে দিন — আমরা কল/ভিজিট বুক করব।</p>
+
+      <form id="modalForm" onsubmit="submitModal(event)">
+        <label>নাম</label>
+        <input id="mname" required placeholder="নাম" />
+        <label>ফোন/ইমেইল</label>
+        <input id="mcontact" required placeholder="ইমেইল বা ফোন" />
+        <label>মন্তব্য</label>
+        <textarea id="mmsg" rows="4" required placeholder="আপনার বার্তা..."></textarea>
+        <div style="display:flex;gap:8px;margin-top:8px">
+          <button type="submit" class="btn-primary">অফার বুক করুন</button>
+          <button type="button" class="btn-outline" id="closeModal2">বন্ধ</button>
+        </div>
+        <div id="modalMsg" class="small-note" style="margin-top:8px"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script>
+    // small helpers
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // Mobile menu: simple toggle that shows nav links in small screens
+    const menuBtn = document.getElementById('menuBtn');
+    menuBtn && menuBtn.addEventListener('click', () => {
+      const nav = document.querySelector('nav ul');
+      if(!nav) return;
+      if (nav.style.display === 'flex') { nav.style.display = 'none'; menuBtn.textContent = '☰'; }
+      else { nav.style.display = 'flex'; nav.style.flexDirection = 'column'; nav.style.background = 'rgba(0,0,0,0.06)'; nav.style.position='absolute'; nav.style.right='20px'; nav.style.top='64px'; nav.style.padding='12px'; nav.style.borderRadius='12px'; menuBtn.textContent = '✕'; }
+    });
+
+    // Modal logic
+    const openModalButtons = [document.getElementById('openModal'), document.getElementById('ctaContact')].filter(Boolean);
+    const modalBackdrop = document.getElementById('modalBackdrop');
+    const closeModalBtns = [document.getElementById('closeModal'), document.getElementById('closeModal2')].filter(Boolean);
+
+    openModalButtons.forEach(b => b.addEventListener('click', () => {
+      modalBackdrop.style.display = 'flex';
+      modalBackdrop.setAttribute('aria-hidden','false');
+    }));
+    closeModalBtns.forEach(b => b.addEventListener('click', () => {
+      modalBackdrop.style.display = 'none';
+      modalBackdrop.setAttribute('aria-hidden','true');
+    }));
+    window.addEventListener('keydown', (e) => { if(e.key==='Escape') { modalBackdrop.style.display='none'; modalBackdrop.setAttribute('aria-hidden','true') }});
+
+    // contact form fake submit
+    function submitForm(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const msg = document.getElementById('msg').value.trim();
+      const fm = document.getElementById('formMsg');
+      if(!name||!email||!msg){ fm.textContent = 'অনুগ্রহ করে সব ফিল্ড পূরণ করুন।'; fm.style.color='crimson'; return; }
+      fm.textContent = 'ধন্যবাদ! আপনার বার্তা গ্রহণ করা হয়েছে — আমরা শীঘ্রই যোগাযোগ করব।';
+      fm.style.color='green';
+      e.target.reset();
+      setTimeout(()=>fm.textContent='',4500);
+    }
+
+    function submitModal(e){
+      e.preventDefault();
+      const n = document.getElementById('mname').value.trim();
+      const c = document.getElementById('mcontact').value.trim();
+      const mm = document.getElementById('mmsg').value.trim();
+      const mmg = document.getElementById('modalMsg');
+      if(!n||!c||!mm){ mmg.textContent='সব তথ্য পূরণ করুন।'; mmg.style.color='crimson'; return; }
+      mmg.textContent = 'আপনার অনুরোধ গ্রহণ করা হয়েছে — আমাদের টিম ২৪ ঘন্টার মধ্যে যোগাযোগ করবে।';
+      mmg.style.color='green';
+      e.target.reset();
+      setTimeout(()=>{ modalBackdrop.style.display='none'; modalBackdrop.setAttribute('aria-hidden','true'); mmg.textContent=''; }, 2500);
+    }
+
+    // simple testimonials slider (auto)
+    (function(){
+      const wrap = document.getElementById('testiWrap');
+      if(!wrap) return;
+      let pos = 0;
+      const step = 330; // approximate width of each slide
+      function slide(){
+        pos += step;
+        if(pos > (wrap.scrollWidth - wrap.clientWidth)) pos = 0;
+        wrap.scrollTo({left: pos, behavior:'smooth'});
+      }
+      let t = setInterval(slide, 3500);
+      wrap.addEventListener('mouseenter', ()=>clearInterval(t));
+      wrap.addEventListener('mouseleave', ()=>t = setInterval(slide,3500));
+    })();
+
+    // smooth internal links
+    document.querySelectorAll('a[href^="#"]').forEach(link=>{
+      link.addEventListener('click', function(e){
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target){ e.preventDefault(); window.scrollTo({top: target.offsetTop - 72, behavior:'smooth'}); }
+      });
+    });
+
+  </script>
+</body>
+</html>
